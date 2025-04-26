@@ -2,6 +2,10 @@
 
 This is a reproduction repository for https://github.com/dunglas/frankenphp/issues/1530
 
+- This is a fresh new Laravel project without any customization.
+- It uses SQLITE by default.
+- The route `http://localhost:8717/test` creates a random user on database.
+
 
 ## How to
 
@@ -25,11 +29,11 @@ composer build
 ```
 
 Check the browser.
-```
+```bash
 http://localhost:8717/test
 ```
 
-Make a stress test.
+Make a stress test from your host (not docker container).
 
 ```bash
 # You could use other tool.
