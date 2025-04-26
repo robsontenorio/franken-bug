@@ -1,0 +1,9 @@
+services:
+    franken-bug:
+        build:
+            context: ..
+            dockerfile: .docker/Dockerfile
+        volumes:
+            - ../:/app:cached
+        ports:
+            - 8717:8000
